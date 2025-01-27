@@ -1,7 +1,6 @@
 # 주차면 예약 시스템 UI 개발
 ## 프론트엔드 아키텍처
-
-![image.png](attachment:496bf816-e153-4e84-98e3-29573c68437e:image.png)
+![image](https://github.com/user-attachments/assets/a222ba13-d0b4-4006-91df-86a4cf6e0ef8)
 
 ### 프로젝트 전반적인 구조
 
@@ -232,7 +231,7 @@ endpoints: (builder) => ({
 
 ### 렌더링 성능 최적화
 
-![image.png](attachment:859520cd-b22a-4674-9640-7f516fc89c22:image.png)
+![image](https://github.com/user-attachments/assets/a0c7b29f-b9dd-4c5a-b1fc-9fde050155a6)
 
 - **React.memo**
     - ParkingSpotComponent를 React.memo로 감싸, props 변경이 없을 경우 리렌더링을 방지했습니다.
