@@ -1,0 +1,68 @@
+/* 공통 버튼 스타일 */
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+/* 호버 애니메이션 */
+.button:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+/* 버튼 비활성화 */
+.button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    filter: none;
+}
+
+/* 색상에 따른 버튼 스타일 */
+.completeButton {
+    background-color: #4caf50; /* 녹색 (완료) */
+    color: white;
+}
+
+.completeButton:hover {
+    background-color: #45a049; /* 약간 어두운 녹색 */
+}
+
+.reserveButton {
+    background-color: #2196f3; /* 파란색 (예약) */
+    color: white;
+}
+
+.reserveButton:hover {
+    background-color: #1e88e5; /* 약간 어두운 파란색 */
+}
+
+.backButton {
+    background-color: #f44336; /* 빨간색 (뒤로가기) */
+    color: white;
+}
+
+.backButton:hover {
+    background-color: #e53935; /* 약간 어두운 빨간색 */
+}
+
+/* 추가 버튼 크기 옵션 */
+.small {
+    font-size: 14px;
+    padding: 8px 16px;
+    width: 150px;
+}
+
+.large {
+    font-size: 18px;
+    padding: 12px 24px;
+    width: 250px;
+}

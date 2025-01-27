@@ -1,0 +1,44 @@
+.parkingSpot {
+    width: 100px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.parkingSpot:hover {
+    transform: scale(1.1);
+}
+
+.available {
+    background-color: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+}
+
+.occupied {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+    color: #721c24;
+}
+
+.reserved {
+    background-color: #d1ecf1;
+    border-color: #17a2b8;
+    color: #0c5460;
+}
+
+.id {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.status {
+    font-size: 14px;
+    color: inherit;
+}
