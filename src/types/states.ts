@@ -25,9 +25,9 @@ export interface ParkingSpot {
  * 사용자 예약 정보
  */
 export interface MySpotState {
-    id: string | null; // 사용자 ID
-    parkingSpotId: string | null; // 예약된 주차 면 ID
-    status: ParkingSpotStatus | null; // 예약 상태
+    id: Nullable<string>; // 사용자 ID
+    parkingSpotId: Nullable<string>; // 예약된 주차 면 ID
+    status: Nullable<ParkingSpotStatus>; // 예약 상태
     loading?: boolean; // 로딩 상태
-    error?: string | null; // 에러 메시지
+    error?: string; // 에러 메시지
 }
