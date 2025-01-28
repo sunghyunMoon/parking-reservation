@@ -9,6 +9,7 @@ import { useUpdateParkingSpotMutation } from '../redux/apis/parkingSpotsApi.ts';
 import Button from './Button.tsx';
 import useHandleBeforeUnload from '../hooks/useHandleBeforeUnload.tsx';
 import Timer from './Timer.tsx';
+import { updateMySpotServiceKeepAlive } from '../api/service/mySpotService.ts';
 
 const ReservePage: React.FC = () => {
     const { id } = useParams<{ id: string }>();
@@ -23,12 +24,12 @@ const ReservePage: React.FC = () => {
     useHandleBeforeUnload({
         condition: mySpot.status === '예약', // "예약" 상태일 때만 실행
         onUnload: () => {
-            updateMySpot({
-                id: 'user',
-                parkingSpotId: mySpot.parkingSpotId!,
+            updateParkingSpot({ id: mySpot.parkingSpotId!, status: '비점유' });
+            updateMySpotServiceKeepAlive({
+                id: mySpot.id!,
+                parkingSpotId: null,
                 status: '비점유',
             });
-            updateParkingSpot({ id: mySpot.parkingSpotId!, status: '비점유' });
         },
     });
 
