@@ -21,10 +21,10 @@
 
 **기본 API 엔드포인트**
 
-JSON 서버는 기본적으로 http://localhost:3001에서 실행되며, 다음 엔드포인트를 제공합니다:
+JSON 서버는 기본적으로 3001 port에서 실행되며, 다음 엔드포인트를 제공합니다:
 
-- 주차 면 정보: http://localhost:3001/parkingSpots
-- 예약 정보: http://localhost:3001/parkingReservations
+- 주차 면 정보: /parkingSpots
+- 예약 정보: /parkingReservations
 
 ## 프론트엔드 아키텍처
 ![image](https://github.com/user-attachments/assets/a222ba13-d0b4-4006-91df-86a4cf6e0ef8)
