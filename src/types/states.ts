@@ -29,5 +29,5 @@ export interface MySpotState {
     parkingSpotId: Nullable<string>; // 예약된 주차 면 ID
     status: Nullable<ParkingSpotStatus>; // 예약 상태
     loading?: boolean; // 로딩 상태
-    error?: string; // 에러 메시지
+    error?: Nullable<string>; // 에러 메시지
 }
