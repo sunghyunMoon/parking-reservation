@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/parking-reservation/static/css/main.8e732851.css",
-    "main.js": "/parking-reservation/static/js/main.ff56698b.js",
+    "main.css": "/parking-reservation/static/css/main.896976ef.css",
+    "main.js": "/parking-reservation/static/js/main.17a32313.js",
     "index.html": "/parking-reservation/index.html",
-    "main.8e732851.css.map": "/parking-reservation/static/css/main.8e732851.css.map",
-    "main.ff56698b.js.map": "/parking-reservation/static/js/main.ff56698b.js.map"
+    "main.896976ef.css.map": "/parking-reservation/static/css/main.896976ef.css.map",
+    "main.17a32313.js.map": "/parking-reservation/static/js/main.17a32313.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e732851.css",
-    "static/js/main.ff56698b.js"
+    "static/css/main.896976ef.css",
+    "static/js/main.17a32313.js"
   ]
 }
